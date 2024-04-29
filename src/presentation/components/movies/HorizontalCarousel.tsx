@@ -10,7 +10,6 @@ interface Props {
   loadNextPage?: () => void;
 }
 
-
 export const HorizontalCarousel = ({ movies, title, loadNextPage }: Props) => {
 
   const isLoading = useRef(false);
@@ -22,8 +21,6 @@ export const HorizontalCarousel = ({ movies, title, loadNextPage }: Props) => {
     }, 200);
 
   }, [ movies ])
-  
-
 
   const onScroll = (event: NativeSyntheticEvent<NativeScrollEvent>) => {
 

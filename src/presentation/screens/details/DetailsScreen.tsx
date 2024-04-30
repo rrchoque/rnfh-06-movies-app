@@ -14,7 +14,7 @@ export const DetailsScreen = ({ route }: Props) => {
   const { isLoading, movie, cast = [] } = useMovie( movieId );
 
   if (isLoading) {
-    return <Text>Cargando</Text>
+    return <FullScreenLoader />
   }
 
   return (
